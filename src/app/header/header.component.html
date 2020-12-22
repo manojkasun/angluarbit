@@ -1,12 +1,17 @@
-<div class="toolbar" role="banner">
-
-    <span class="wel">Welcome to  </span> Angular Bit PWA
-    <div class="spacer">
-        <a (click)="products('products')" class="space-a">Products</a>
-        <a (click)=" addProduct('add-product')" class="space-a">Add Product</a>
-    </div>
-
-    <button class="right-a">
-     Account
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <a class="navbar-brand mb-0 h1" href="#">Welcome to <span style="color: greenyellow;" >Angular Bit PWA</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-</div>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+
+            <a class="nav-item nav-link" (click)="products('products')">Products</a>
+            <a class="nav-item nav-link" (click)=" addProduct('add-product')">Add Product</a>
+
+        </div>
+    </div>
+    <form class="form-inline">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Account</button>
+    </form>
+</nav>
