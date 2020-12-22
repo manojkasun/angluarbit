@@ -1,0 +1,18 @@
+<li class="list-name">
+    Products</li>
+
+<div class="row" id="electronic">
+    <div class="col2" *ngFor="let product of products" style="background-image: url('{{ product.image }}')">
+        <div class="details">
+            <ul>
+                <li>Name: {{ product.name }}</li>
+                <li>Price: RS. {{ product.price }}</li>
+            </ul>
+
+
+            <app-button variant='solid' label='Add to Cart' style="float: right;"> </app-button>
+        </div>
+    </div>
+
+
+</div>
