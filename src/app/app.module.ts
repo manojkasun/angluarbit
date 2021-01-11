@@ -10,13 +10,15 @@ import { ProductsComponent } from './products/products.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BtnComponent } from './btn/btn.component';
+import { HeaderBtnComponent } from './header-btn/header-btn.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ProductsComponent,
     AddProductComponent,
-    BtnComponent
+    BtnComponent,
+    HeaderBtnComponent
   ],
   imports: [
     BrowserModule,
